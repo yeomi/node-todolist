@@ -1,0 +1,12 @@
+{
+	"name": "my-todoList",
+	"version": "0.1.0",
+	"dependencies": {
+		"express": "~4.10.6",
+		"ejs": "~1.0.0",
+		"cookie-session": "~1.1.0",
+		"body-parser": "~1.10.0"
+	},
+	"author": "Yeomi <gabriel@henao.fr>",
+	"description": "Simple todolist application"
+}

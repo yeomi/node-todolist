@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hello Node.js</title>
+	<style>
+		a {text-decoration: none; color: black;}
+	</style>
+</head>
+<body>
+	<h1>My todolist</h1>
+
+	<div>
+		<ul>
+			<% for(var i=0; i<todolist.length; i++) {%>
+		   		<li><a class="delete" href="/delete/<%= i %>">✘</a> <%= todolist[i] %></li>
+			<% } %>
+		</ul>
+	</div>
+
+	<form action="/add" method="post">
+		<div><span>What do I have to do ? </span><input type="text" name="task"><input type="submit" value="Send"></div>
+	</form>
+</body>
+</html>
